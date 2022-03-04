@@ -1,0 +1,164 @@
+.logo,.menu,.links,.top{
+    z-index: 100;
+}
+/* topbar */
+.logo{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+.logo:hover{
+    color: gray;
+    border: 2px solid gray;
+}
+
+.menu{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.hamburger{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.line{
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* footer  */
+.links{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.top{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.icons{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+.svg{
+    height: 32px;
+    width: 32px;
+}
+.icons:hover{
+    background-color: black;
+}
+
+/* media Queries  */
+@media screen and (max-width:540px){
+    .logo{
+        top: 20px;
+        left:20px;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .menu{
+        top: 30px;
+        right: 20px;
+        gap: 0.5rem;
+    }
+    .links{
+        bottom: 20px;
+        left: 20px;
+        width: 40px;
+    }
+    .top{
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .text{
+        font-size: 0.9rem;
+    }
+    .hamburger{
+        width: 20px;
+    }
+    .line{
+        height: 3px;
+    }
+    .icons{
+        padding: 0.6rem;
+        border-radius: 1rem;
+    }
+    .svg{
+        height: 16px;
+        width: 16px;
+    }
+}
+
+@media (min-width:540px) and (max-width:900px){
+    .logo{
+        top: 30px;
+        left:30px;
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+    .menu{
+        right: 30px;
+        gap: 0.5rem;
+    }
+    .links{
+        bottom: 30px;
+        left: 30px;
+        width: 50px;
+    }
+    .top{
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+    }
+    .hamburger{
+        width: 25px;
+    }
+    .line{
+        height: 3px;
+    }
+    .icons{
+        padding: 0.6rem;
+        border-radius: 1rem;
+    }
+    .svg{
+        height: 24px;
+        width: 24px;
+    }
+}
