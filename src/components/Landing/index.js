@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll/modules';
 import styles from './Landing.module.css';
-import profileImg from '../../static/profile.png';
+import profileImg from '../../static/profile-b&w.png';
 
 const resume = 'https://drive.google.com/file/d/1DPGS1n2Li6y9QQyFpr7GPJJJjRb3vO7W/view?usp=sharing'
 
