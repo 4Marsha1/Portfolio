@@ -1,0 +1,48 @@
+.footer{
+    padding: 2rem 4rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text{
+    text-align: center;
+    font-size: 1.2rem;
+    color: lightgray;
+}
+.who{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.me{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.love{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:540px){
+    .footer{
+        padding: 2rem 1rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .who{
+        font-size: 1rem;
+    }
+    .me{
+        font-size: 1rem;
+    }
+    .love{
+        font-size: 1rem;
+    }
+}

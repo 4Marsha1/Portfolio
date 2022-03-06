@@ -68,7 +68,7 @@
     line-height: 60px;
     overflow: hidden;
     text-align: center;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 .icons:hover{
     width: 180px;
@@ -78,7 +78,7 @@
     position: absolute;
     top: 4px;
     left: 70px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .icon{

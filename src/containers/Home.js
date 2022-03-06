@@ -5,6 +5,7 @@ import ExperiencesComponent from '../components/Experiences';
 import ProjectsComponent from '../components/Projects';
 import CertificationsComponent from '../components/Certifications';
 import ContactForm from '../components/Contact';
+import Footer from '../components/Footer';
 import experiencesData from '../data/experiences';
 import projectsData from '../data/projects';
 import certificationsData from '../data/certifications';
@@ -19,6 +20,7 @@ const Home = () => {
             <ProjectsComponent projectsData={projectsData} />
             <CertificationsComponent certificationsData={certificationsData} />
             <ContactForm />
+            <Footer />
         </div>
     )
 }
