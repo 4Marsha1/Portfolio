@@ -5,11 +5,13 @@
 }
 .parent{
     margin: 2rem 0;
+    background-color: black;
     padding: 2rem 4rem;
 }
 .heading{
     font-size: 3.6rem;
     font-weight: 700;
+    color: white;
 }
 
 
@@ -194,6 +196,6 @@
     left: -30px;
   }
   .timeline ol li:hover::before {
-    background-color: black;
+    background-color: white;
   }
 }
