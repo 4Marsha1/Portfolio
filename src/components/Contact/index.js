@@ -30,8 +30,8 @@ const ContactForm = () => {
                 <div className={styles['details']}>
                     <span className={styles['text']}> <MailSVG className={styles['svg']} /> abhishekbharadwaz22@gmail.com</span>
                     <span className={styles['text']}> <PhoneSVG className={styles['svg']} /> +91 7636012703 </span>
-                    <span className={styles['text']}> <GithubSVG className={styles['svg']} /> 4Marsha1 </span>
-                    <span className={styles['text']}> <LinkedInSVG className={styles['svg']} /> Abhishek Bharawaz </span>
+                    <a href='https://github.com/4Marsha1' target='_blank' className={styles['text']}> <GithubSVG className={styles['svg']} /> 4Marsha1 </a>
+                    <a href='https://www.linkedin.com/in/abhishek-bharadwaz-458993192/' target='_blank' className={styles['text']}> <LinkedInSVG className={styles['svg']} /> Abhishek Bharawaz </a>
                 </div>
                 <form ref={form} onSubmit={sendEmail} className={styles['form']}>
                     {sent === 1 ? <span className={styles['msg']}>Message Sent Successfully!</span>

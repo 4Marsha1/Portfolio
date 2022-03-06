@@ -6,9 +6,9 @@
     position: fixed;
     top: 40px;
     left: 40px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    padding: 1rem;
+    padding: 0.6rem;
     border: 2px solid black;
     border-radius: 1rem;
     cursor: pointer;
@@ -28,7 +28,7 @@
     gap: 1rem;
 }
 .text{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
     border-bottom: 2px solid transparent;
@@ -59,32 +59,32 @@
     position: relative;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
     color: white;
-    padding: 1rem;
+    padding: 0.8rem;
     text-align: center;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     cursor: pointer;
-    width: 64px;
-    height: 64px;
-    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     overflow: hidden;
     text-align: center;
     transition: all 0.3s ease-out;
 }
 .icons:hover{
-    width: 180px;
+    width: 140px;
     background-color: black;
 }
 .name{
     position: absolute;
-    top: 4px;
-    left: 70px;
-    font-size: 1.1rem;
+    top: 2px;
+    left: 50px;
+    font-size: 1rem;
 }
 
 .icon{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
     color: white;
-    padding: 1rem;
+    padding: 0.6rem;
     text-align: center;
     border-radius: 2rem;
     cursor: pointer;
@@ -95,8 +95,8 @@
 }
 .svg{
     float: left;
-    height: 32px;
-    width: 32px;
+    height: 24px;
+    width: 24px;
 }
 
 /* media Queries  */

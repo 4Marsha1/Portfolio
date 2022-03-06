@@ -11,22 +11,22 @@
 
 .text{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: lightgray;
 }
 .who{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 .me{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .love{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @media screen and (max-width:540px){
