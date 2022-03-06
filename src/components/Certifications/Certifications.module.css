@@ -1,6 +1,5 @@
 .container{
     margin: 2rem 0;
-    background-color: black;
     padding: 2rem 4rem;
     box-sizing: border-box;
     background-color: black;
@@ -12,6 +11,7 @@
 }
 
 .cards{
+    margin: 2rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -109,7 +109,7 @@
         padding: 2rem 1rem;
     }
     .heading{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .cards{
         padding: 2rem 0.2rem;
