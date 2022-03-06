@@ -36,6 +36,19 @@ const projects = [
         live: 'https://murmuring-ravine-06450.herokuapp.com/'
     },
     {
+        id: 4,
+        name: 'Sorting Visualizer',
+        img: sorting,
+        tech: ['ReactJS', 'CSS'],
+        desc: [
+            '01. To help visualize the various sorting Algorithms',
+            '02. Applied the sorting algorithms with extra parameters to help animate the sorting process.',
+            '03. A random array can be generated, that is displayed as bar graph. 6 Buttons are available for 6 sorting algorithms: insertion, bubble, selection, merge, quick and count.Each button applies the sorting algorithm and animated the bar graph from unsorted to sorted arrangement'
+        ],
+        sourceCode: 'https://github.com/4Marsha1/SortingVisualizer',
+        live: 'https://sorting-vis-react.netlify.app/sortvisually/homescreen'
+    },
+    {
         id: 2,
         name: 'Budget Planner',
         img: budget,
@@ -73,19 +86,6 @@ const projects = [
         ],
         sourceCode: 'https://github.com/4Marsha1/VanillaJs/tree/main/Apps/TextToSpeech',
         live: 'https://sqweakit.netlify.app/'
-    },
-    {
-        id: 4,
-        name: 'Sorting Visualizer',
-        img: sorting,
-        tech: ['ReactJS', 'CSS'],
-        desc: [
-            '01. To help visualize the various sorting Algorithms',
-            '02. Applied the sorting algorithms with extra parameters to help animate the sorting process.',
-            '03. A random array can be generated, that is displayed as bar graph. 6 Buttons are available for 6 sorting algorithms: insertion, bubble, selection, merge, quick and count.Each button applies the sorting algorithm and animated the bar graph from unsorted to sorted arrangement'
-        ],
-        sourceCode: 'https://github.com/4Marsha1/SortingVisualizer',
-        live: 'https://sorting-vis-react.netlify.app/sortvisually/homescreen'
     },
     {
         id: 5,

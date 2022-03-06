@@ -1,53 +1,43 @@
 import React from 'react'
-import { useState } from 'react'
-import styles from './Projects.module.css'
-import ReactCardFlip from 'react-card-flip'
+import styles from './Projects.module.css';
 
 const ProjectsComponent = ({ projectsData }) => {
-
-    const [flipValues, setFlipValues] = useState(Array(projectsData.length).fill(false))
-
-    const handleClick = (id) => {
-        const change = flipValues[id - 1] = !flipValues[id - 1];
-        setFlipValues([...flipValues, change])
-    }
-
-    const projects = projectsData.map((project, idx) => {
-
+    const topProjects = projectsData.slice(0, 4)
+    const projects = topProjects.map(project => {
         const techString = project.tech.join(' | ')
         return (
-            <ReactCardFlip className={styles['card']} key={idx} isFlipped={flipValues[project.id - 1]} flipDirection="horizontal" >
-                <>
+            <div className={styles['card']} key={project.id}>
+                <div className={styles['image-container']}>
                     <img className={styles['img']} src={project.img} alt="" />
-                    <div className={`${styles['overlay']} ${styles['extra']}`}>
-                        <span className={styles['name']}>{project.name}</span>
-                        <span className={styles['tech']}> {techString} </span>
-                        <div className={styles['links']}>
-                            <a href={project.sourceCode} target="_blank">Source Code</a>
-                            <a href={project.live} target="_blank">Live Project</a>
-                        </div>
-                        <span className={styles['view']} onClick={() => handleClick(project.id)}>Read Details</span>
+                </div>
+                <div className={styles['details']}>
+                    <span className={styles['name']}>{project.name}</span>
+                    <span className={styles['tech']}>{techString}</span>
+                    <div className={styles['about']}>
+                        {project.desc.map((item, idx) => {
+                            return (
+                                <span className={styles['desc']} key={idx}>{item}</span>
+                            )
+                        })}
                     </div>
-                </>
-                <div className={styles['back']}>
-                    <img className={styles['img']} src={project.img} alt="" />
-                    <div className={styles['overlay']} onClick={() => handleClick(project.id)}>
-                        {
-                            project.desc.map(item => {
-                                return <span className={styles['desc']}>{item}</span>
-                            })
-                        }
+                    <div className={styles['btns']}>
+                        <a className={styles['btn']} target="_blank" href={project.sourceCode}>Source Code</a>
+                        <a className={styles['btn']} target="_blank" href={project.live}>See Live</a>
                     </div>
                 </div>
-            </ReactCardFlip>
+            </div>
         )
     })
     return (
-        <div className={styles['container']} id='projects'>
+        <div className={styles['container']}>
             <span className={styles['heading']}>Projects</span>
-            <div className={styles['cards']}>
-                {projects}
+            <div className={styles['projects']}>
+                <span className={styles['heading-2']}>Best Projects</span>
+                <div className={styles['cards']}>
+                    {projects}
+                </div>
             </div>
+            <a href='#' className={styles['heading-3']}>View more projects ➞</a>
         </div>
     )
 }
