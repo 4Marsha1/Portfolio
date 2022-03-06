@@ -1,40 +1,38 @@
 import React from 'react';
 import styles from './Experiences.module.css';
 
-const ExperiencesComponent = () => {
+const ExperiencesComponent = ({ experiencesData }) => {
+
+    const experiences = experiencesData.map(exp => {
+        return (
+            <li key={exp.id}>
+                <div className={styles["timeline-content"]}>
+                    <span className={styles['role']}>{exp.role}</span>
+                    <span className={styles['company']}>{exp.company}</span>
+                    <span className={styles["date"]}>{exp.startDate} - {exp.endDate}</span>
+                    <span className={styles['location']}>{exp.location}</span>
+                    <span className={styles['desc']}>
+                        {
+                            exp.desc.map(item => {
+                                return (
+                                    <span>{item}</span>
+                                )
+                            })
+                        }
+                    </span>
+                </div>
+            </li>
+        )
+    })
 
     return (
-        <div className={styles['parent']}>
+        <div className={styles['parent']} id='experiences'>
             <span className={styles['heading']}>Experiences</span>
             <div className={styles["container"]}>
                 <div className={styles["timeline"]}>
-                    <ul>
-                        <li>
-                            <div className={styles["timeline-content"]}>
-                                <span className={styles['role']}>SDE Intern</span>
-                                <span className={styles['company']}>Ethan AI</span>
-                                <span className={styles["date"]}>Feb 2022 - Mar 2022</span>
-                                <span className={styles['location']}>Singapore</span>
-                                <span className={styles['desc']}>
-                                    • Worked on automation of data extraction using AWS Textract, and other
-                                    AWS services like S3, EC2, Route53. <br />
-                                    • Used technologies: React, Redux, MongoDB, AWS Services, Flask
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={styles["timeline-content"]}>
-                                <span className={styles['role']}>Frontend Developer Intern</span>
-                                <span className={styles['company']}>ZoukE</span>
-                                <span className={styles["date"]}>May 2021 - July 2021</span>
-                                <span className={styles['location']}>Remote</span>
-                                <span className={styles['desc']}>
-                                    • Worked on building the MVP for the Startup. <br />
-                                    • Built several screens from scratch for the web-app using ReactJs, Redux and CSS.
-                                </span>
-                            </div>
-                        </li>
-                    </ul>
+                    <ol>
+                        {experiences}
+                    </ol>
                 </div>
             </div>
         </div>
