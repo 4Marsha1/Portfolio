@@ -9,7 +9,7 @@ import vaidya from '../static/vaidya.jpg'
 import cuvette from '../static/cuvette.jpg'
 import connectPlatform from '../static/connectPlatform.jpg'
 
-const projects = [
+export const bestProjects = [
     {
         id: 10,
         name: 'ConnectPlatform',
@@ -37,6 +37,35 @@ const projects = [
         live: 'https://edvora-abhishekbharadwaz.netlify.app/'
     },
     {
+        id: 2,
+        name: 'Budget Planner',
+        img: budget,
+        tech: ['ReactJS', 'Redux', 'CSS', 'REST API', 'CRUD'],
+        desc: [
+            '01. To provide ease of making budget, adding expenses and keeping track.',
+            '02. The app demonstrates CRUD operations.The data is store in the local storage.The data is collected using basic forms.',
+            '03. One can make budgets with a name and max amount.One can add expenses with name, amount and category(either one of the budgets or uncategorized).'
+        ],
+        sourceCode: 'https://github.com/4Marsha1/BudgetApp',
+        live: 'https://budget-app-crud.netlify.app/'
+    },
+    {
+        id: 4,
+        name: 'Sorting Visualizer',
+        img: sorting,
+        tech: ['ReactJS', 'CSS'],
+        desc: [
+            '01. To help visualize the various sorting Algorithms',
+            '02. Applied the sorting algorithms with extra parameters to help animate the sorting process.',
+            '03. A random array can be generated, that is displayed as bar graph. 6 Buttons are available for 6 sorting algorithms: insertion, bubble, selection, merge, quick and count.Each button applies the sorting algorithm and animated the bar graph from unsorted to sorted arrangement'
+        ],
+        sourceCode: 'https://github.com/4Marsha1/SortingVisualizer',
+        live: 'https://sorting-vis-react.netlify.app/sortvisually/homescreen'
+    },
+]
+
+export const teamProjects = [
+    {
         id: 8,
         name: 'Vaidya',
         img: vaidya,
@@ -48,6 +77,22 @@ const projects = [
         ],
         sourceCode: 'https://github.com/SRV1030/Vaidya',
         live: 'https://murmuring-ravine-06450.herokuapp.com/'
+    },
+]
+
+export const allProjects = [
+    {
+        id: 10,
+        name: 'ConnectPlatform',
+        img: connectPlatform,
+        tech: ['MongoDB', 'Mongoose', 'NodeJs', 'Express', 'ReactJS', 'Redux', 'CSS', 'REST API'],
+        desc: [
+            '01. Platform for developers, where one can connect and share posts',
+            '02. One can register into the platform, make a profile, view others profile, make posts, like and comment on posts.',
+            '03. Fully CRUD app. One can create, read, update & delete everything from profiles, posts, comments, dashboard etc '
+        ],
+        sourceCode: 'https://github.com/4Marsha1/ConnectPlatform',
+        live: 'https://pacific-oasis-57891.herokuapp.com/'
     },
     {
         id: 2,
@@ -61,6 +106,32 @@ const projects = [
         ],
         sourceCode: 'https://github.com/4Marsha1/BudgetApp',
         live: 'https://budget-app-crud.netlify.app/'
+    },
+    {
+        id: 1,
+        name: 'Edvora',
+        img: edvora,
+        tech: ['ReactJS', 'Redux', 'CSS', 'REST API'],
+        desc: [
+            '01. To implement React and Redux',
+            '02. Data is fetched from an API, the data is then sorted category wise and displayed',
+            '03. User can view various products and prices.The filter option enables user to filter by brand name, state, city.Once a product is selected, one can filter the states for that product specifically, and once a state is selected, one can filter by cities of that state too.'
+        ],
+        sourceCode: 'https://github.com/4Marsha1/Edvora',
+        live: 'https://edvora-abhishekbharadwaz.netlify.app/'
+    },
+    {
+        id: 8,
+        name: 'Vaidya',
+        img: vaidya,
+        tech: ['NodeJS', 'Express', 'EJS', 'MongoDB', 'Mongoose'],
+        desc: [
+            '01. A medical-help center web application that will help connecting local hospitals to people.',
+            '02. It acts as an information center that will provide a user with all the details they need about the medical outlets nearby.',
+            '03. Users can also enter there through the forms and changes will be reflected in the website'
+        ],
+        sourceCode: 'https://github.com/SRV1030/Vaidya',
+        live: 'https://murmuring-ravine-06450.herokuapp.com/'
     },
     {
         id: 4,
@@ -141,5 +212,3 @@ const projects = [
         live: 'https://github-weekly-newsletter.netlify.app/'
     },
 ]
-
-export default projects;

@@ -6,12 +6,17 @@ import { ReactComponent as MailSVG } from '../../static/mail.svg'
 import { ReactComponent as GithubSVG } from '../../static/github.svg'
 import { ReactComponent as LinkedInSVG } from '../../static/linkedin.svg'
 import { ReactComponent as Up } from '../../static/upArrow.svg'
+import { useNavigate } from 'react-router-dom';
 
 const FixedComponent = () => {
+    const navigate = useNavigate();
     return (
         <div className={styles['container']}>
             <div className={styles['section']}>
-                <span className={styles['logo']} onClick={() => scroll.scrollToTop()}>AB</span>
+                <span className={styles['logo']} onClick={() => {
+                    navigate('/')
+                    scroll.scrollToTop()
+                }}>AB</span>
                 <div className={styles['menu']}>
                     <Link className={styles['text']} to="contact" smooth={true} duration={1500}>Let's Connect ➞ </Link>
                 </div>

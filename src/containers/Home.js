@@ -7,7 +7,8 @@ import CertificationsComponent from '../components/Certifications';
 import ContactForm from '../components/Contact';
 import Footer from '../components/Footer';
 import experiencesData from '../data/experiences';
-import projectsData from '../data/projects';
+import { bestProjects } from '../data/projects';
+import { teamProjects } from '../data/projects';
 import certificationsData from '../data/certifications';
 
 
@@ -17,7 +18,7 @@ const Home = () => {
             <FixedComponent />
             <LandingComponent />
             <ExperiencesComponent experiencesData={experiencesData} />
-            <ProjectsComponent projectsData={projectsData} />
+            <ProjectsComponent bestProjects={bestProjects} teamProjects={teamProjects} type={1} />
             <CertificationsComponent certificationsData={certificationsData} />
             <ContactForm />
             <Footer />

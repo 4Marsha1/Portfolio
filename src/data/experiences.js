@@ -4,7 +4,7 @@ const experiences = [
         role: 'SDE Intern',
         company: 'Ethan AI',
         startDate: 'Feb 2022',
-        endDate: 'March 2022',
+        endDate: 'Present',
         location: 'Singapore',
         desc: [
             '• Worked on automation of data extraction using AWS Textract, and other AWS services like S3, EC2, Route53.',
