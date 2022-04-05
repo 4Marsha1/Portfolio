@@ -8,6 +8,7 @@ import githubWeekly from '../static/github-weekly.jpg'
 import vaidya from '../static/vaidya.jpg'
 import cuvette from '../static/cuvette.jpg'
 import connectPlatform from '../static/connectPlatform.jpg'
+import letGoDutch from '../static/letsGoDutch.jpg'
 
 export const bestProjects = [
     {
@@ -210,5 +211,18 @@ export const allProjects = [
         ],
         sourceCode: 'https://github.com/4Marsha1/GithubWeekly',
         live: 'https://github-weekly-newsletter.netlify.app/'
+    },
+    {
+        id: 11,
+        name: "Let's Go Dutch",
+        img: letGoDutch,
+        tech: ['ReactJS', 'CSS', 'REST API', 'MongoDB', 'NodeJS', 'Express'],
+        desc: [
+            '01. Divide bills among groups at ease',
+            '02. Make groups, add budgets and expenses, pay the cost alloted to yourself',
+            '03. One can make multiple groups'
+        ],
+        sourceCode: 'https://github.com/4Marsha1/LetsGoDutch',
+        live: '#'
     },
 ]
