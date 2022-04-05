@@ -9,6 +9,7 @@ import vaidya from '../static/vaidya.jpg'
 import cuvette from '../static/cuvette.jpg'
 import connectPlatform from '../static/connectPlatform.jpg'
 import letGoDutch from '../static/letsGoDutch.jpg'
+import astra from '../static/astra-dashboard.jpg'
 
 export const bestProjects = [
     {
@@ -223,6 +224,18 @@ export const allProjects = [
             '03. One can make multiple groups'
         ],
         sourceCode: 'https://github.com/4Marsha1/LetsGoDutch',
+        live: '#'
+    },
+    {
+        id: 12,
+        name: "Astra Dashboard",
+        img: astra,
+        tech: ['ReactJS', 'CSS', 'Redux'],
+        desc: [
+            '01. Basic Dashboard UI built with ReactJS & CSS',
+            '02. DOM manipulation & Local storage implemented',
+        ],
+        sourceCode: 'https://github.com/4Marsha1/Astra-dashboard',
         live: '#'
     },
 ]
